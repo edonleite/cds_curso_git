@@ -1,7 +1,6 @@
 import streamlit as st
 from src.extraction import load_data
 
-
 st.set_page_config(layout='wide')
 
 def create_dataframe_section(df):
@@ -37,6 +36,8 @@ def create_dataframe_section(df):
 
 def main():
     df_raw = load_data()
+
+    create_dataframe_section(df_raw)
 
     st.dataframe(df_raw)
 
