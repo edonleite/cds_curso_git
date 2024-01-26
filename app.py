@@ -68,5 +68,7 @@ def main():
 
     st.dataframe(df)
 
+    return None
+
 if __name__ == '__main__':
     main()
