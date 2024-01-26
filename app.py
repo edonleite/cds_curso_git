@@ -60,13 +60,13 @@ def create_answers_section(df):
     return None
 
 def main():
-    df = load_data()
+    df_draw = load_data()
 
-    create_dataframe_section(df)
+    create_dataframe_section(df_draw)
 
-    create_answers_section(df)
+    create_answers_section(df_draw)
 
-    st.dataframe(df)
+    st.dataframe(df_draw)
 
     return None
 
